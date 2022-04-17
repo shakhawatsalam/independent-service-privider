@@ -1,0 +1,15 @@
+.content{
+    width: 900px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doctor-img img{
+    height: 93vh;
+    width: 100%;
+}
+.text {
+    font-size: 50px;
+}
