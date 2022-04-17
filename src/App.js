@@ -4,12 +4,14 @@ import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import NavBar from './components/NavBar/NavBar';
 import Register from './components/Register/Register';
 
 
 function App() {
   return (
     <div>
+      <NavBar></NavBar>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>

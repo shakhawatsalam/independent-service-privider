@@ -6,7 +6,6 @@ import './Home.css'
 const Home = () => {
     return (
         <div className='container'>
-            <NavBar></NavBar>
             <div className='header'>
                 <div className="content">
                     <h1 className='text'>Hi, I am Amy</h1>
