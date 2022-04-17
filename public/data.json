@@ -2,56 +2,25 @@
     {
         "id": "623de11b7b5c08494fca9f32",
         "name": "Ray S. jone",
-        "comment1":"Excellent Quality!",
-        "reviews": "good product",
-        "ratings": "4.5",
+        
+      
+        "price": "4.5",
         "comment": "The best graphics cards are the lifeblood of any gaming PC — they're the beating heart pumping out stunningly-rendered pixels to your screen.",
         "picture": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
     {
       "id": "623de11b7b5c08494fca9f42",
       "name": "Ray S. Hopper",
-      "comment1":"good product!!!",
-      "reviews": "good product",
-      "ratings": "4.7",
+      "price": "4.7",
       "comment": "Nvidia's GeForce RTX 3080 sports the new and improved Ampere architecture. It's over 30% faster than the previous gen 2080 Ti, and supposedly costs $500 less...",
       "picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "623de11be6f7718d08221d5f",
       "name": "Anthony C. Jacobs",
-      "comment1":"Nice one!!!",
-      "reviews": "good product",
-      "ratings": "4.9",
+      "price": "4.9",
       "comment": "For some, the best card is the fastest card — pricing be damned! Nvidia's GeForce RTX 3090 caters to this category of user....",
       "picture": "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "623de11bfb275f4db43f2fae",
-      "name": "Adam S. Arredondo",
-      "comment1":"great experience!",
-      "reviews": "good product",
-      "ratings": "4.5",
-      "comment": "Nvidia's Ampere march continues with what might just be the best of the bunch. The GeForce RTX 3060 Ti has all the same features as the other 30-series GPUs, with a starting price of just $399...",
-      "picture": "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-    },
-    {
-      "id": "623de11b6501a5ac974cfac0",
-      "name": "Joel D. Swearingen",
-      "comment1":"highly recommended!!!",
-      "reviews": "good product",
-      "ratings": "4.6",
-      "comment": "The GeForce RTX 3070 continues the Ampere onslaught and the march of next-gen architectures. It's a sizeable step down from the 3080, and has less than half the VRAM of AMD's RX 6800 series cards..",
-      "picture": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-    },
-    {
-      "id": "623de11ba99a378937e31071",
-      "name": "John B. Merlin",
-      "comment1":"not bad at all!!!",
-      "reviews": "good product",
-      "ratings": "4.8",
-      "comment": "Take everything great about the new Navi 21 GPU that powers the 6800 XT (above), then trim it by about 10% and you get the vanilla RX 6800.",
-      "picture": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
     }
-    
-  ]
+
+]
