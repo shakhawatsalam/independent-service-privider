@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle, } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
 import './Login.css';
 import 'react-toastify/dist/ReactToastify.css';
+import google from '../../Images/google.png'
 const Login = () => {
     const [email, setEmail] = useState('');
     const location = useLocation();
     const navigate = useNavigate();
+    const [signInWithGoogle, googleuser, googleLoading, googlError] = useSignInWithGoogle(auth);
+    console.log(googlError);
     const [
         signInWithEmailAndPassword,
         user,
@@ -41,6 +44,15 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true })
     }
+    const googleSingin = () => {
+        signInWithGoogle();
+        
+    }
+    if (googleuser) {
+        navigate(from, { replace: true })
+    }
+    
+    
 
     const forgotPassword = async () => {
         console.log(email);
@@ -71,6 +83,8 @@ const Login = () => {
                     {errorElement}
                     {loadingElement}
                     <input className='btn btn-success mt-2' type="submit" value="Login" />
+                    {/* <input className='d-block btn btn-success mt-2' type="submit" value="Login" /> */}
+                    <button onClick={() => googleSingin()} className='d-block btn mt-2 border w-50 mx-auto'><img src={google} alt="" /> Singin with Google</button>
 
 
                 </form>
