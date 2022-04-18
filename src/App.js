@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
 import Checkout from './components/Checkout/Checkout';
+import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import NavBar from './components/NavBar/NavBar';
@@ -27,6 +28,7 @@ function App() {
           </RequireAuth>
         }></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
