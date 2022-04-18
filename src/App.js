@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import NavBar from './components/NavBar/NavBar';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 import Register from './components/Register/Register';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 
@@ -27,6 +28,7 @@ function App() {
             <Checkout />
           </RequireAuth>
         }></Route>
+      <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
