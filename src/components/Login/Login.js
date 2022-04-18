@@ -1,13 +1,13 @@
-import { async } from '@firebase/util';
 import React, { useState } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
 import './Login.css';
 import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
     const [email, setEmail] = useState('');
+    const location = useLocation();
     const navigate = useNavigate();
     const [
         signInWithEmailAndPassword,
@@ -18,6 +18,8 @@ const Login = () => {
     const [sendPasswordResetEmail, sending, ResetError] = useSendPasswordResetEmail(
         auth
     );
+    let from = location.state?.from?.pathname || "/";
+    console.log(from);
     let errorElement;
     if (error) {
         errorElement = <p className='text-danger'>Error : {error?.message}</p>
@@ -26,17 +28,20 @@ const Login = () => {
     if (loading) {
         loadingElement = <p>Loading...</p>
     }
-
-
+    
     const login = event => {
         event.preventDefault()
         const email = event.target.email.value;
         const password = event.target.password.value;
+        
 
         signInWithEmailAndPassword(email, password);
-        navigate('/')
-        console.log(error);
+
     }
+    if (user) {
+        navigate(from, { replace: true })
+    }
+
     const forgotPassword = async () => {
         console.log(email);
         if (email) {
