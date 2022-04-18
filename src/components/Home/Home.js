@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
 import Services from '../Services/Services';
 import './Home.css'
 
