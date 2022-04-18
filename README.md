@@ -2,7 +2,7 @@
 
 - # This is Dental care service Web page.
 - # Home page Extra part is address.
-- # In About Section there is noting else done.
+- # In About Section wrote a little bit about my goal.
 - # Service section has 3 services.
 - # Only mobile Responsive is done.
 # technologies  used : 
