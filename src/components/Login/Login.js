@@ -31,12 +31,12 @@ const Login = () => {
     if (loading) {
         loadingElement = <p>Loading...</p>
     }
-    
+
     const login = event => {
         event.preventDefault()
         const email = event.target.email.value;
         const password = event.target.password.value;
-        
+
 
         signInWithEmailAndPassword(email, password);
 
@@ -46,13 +46,13 @@ const Login = () => {
     }
     const googleSingin = () => {
         signInWithGoogle();
-        
+
     }
     if (googleuser) {
         navigate(from, { replace: true })
     }
-    
-    
+
+
 
     const forgotPassword = async () => {
         console.log(email);

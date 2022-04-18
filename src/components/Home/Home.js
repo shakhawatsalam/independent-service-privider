@@ -1,4 +1,5 @@
 import React from 'react';
+import Extrapart from '../ExtraPart/Extrapart';
 import Services from '../Services/Services';
 import './Home.css'
 
@@ -8,7 +9,7 @@ const Home = () => {
             <div className='header'>
                 <div className="content">
                     <h1 className='text'>Hi, I am Amy</h1>
-                    <h1 className='text'>Dental Care</h1>
+                    <h1 className='text'>Dentist</h1>
                     <p>We offer a full range of dental, preventative, restorative, & cosmetic services. Book now. Care at Tend isn’t just painless, it’s a pleasure. Book an appointment online today. Full-service dentistry. Emergency appointments. No judgment ever. Insurance accepted. Safety first. State-of-the-art tech.</p>
                     <button className='btn btn-success mt-5'>Get Started</button>
                 </div>
@@ -16,6 +17,7 @@ const Home = () => {
                     <img src="https://images.unsplash.com/photo-1613918108466-292b78a8ef95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" alt="" />
                 </div>
             </div>
+            <Extrapart></Extrapart>
             <Services></Services>
         </div>
         
