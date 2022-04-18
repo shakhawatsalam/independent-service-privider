@@ -1,3 +1,8 @@
 .carded{
     width: 400px;
 }
+@media screen and (max-width: 576px) {
+    .carded{
+        width: 350px;
+    }
+}
