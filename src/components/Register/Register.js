@@ -53,3 +53,8 @@ const Register = () => {
 };
 
 export default Register;
+
+
+
+
+<h1 className='text-center'><span>Please</span> Register</h1>
